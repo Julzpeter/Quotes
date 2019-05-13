@@ -1,8 +1,8 @@
 <div class="container-fluid">
-  <form>
+  <form (ngSubmit) = 'submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
       <label for="author">Author</label>
-      <input class="form-conrol" required class="form-control" id="text"  name="name" >    
+      <input class="form-conrol" required class="form-control" id="text" [(ngModel)]="newQuote.name"  name="name" #name="ngModel" >    
     </div>
   
     <br>
@@ -10,18 +10,18 @@
 
   <div class="form-group">
     <label for="quote">Quote</label>
-    <textarea class="form-control " id="description" rows="4" name="description" required></textarea>
+    <textarea class="form-control " id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #dsecription="ngModel" required></textarea>
   </div>
   <br>
   <br>
 
   <div class="form-group">
     <label for="Publisher">Published By</label>
-    <input class='form-control' id="text" name="Publisher"  required>
+    <input class='form-control' id="text" [(ngModel)]="newQuote.Publisher" name="Publisher" #Publisher="ngModel" required>
   </div>
   <br>
   <br>
-  
+
   <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
   </form>
   
