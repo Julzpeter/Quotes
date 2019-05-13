@@ -6,7 +6,14 @@ import { Quote} from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quote = []
+  quotes = []
+
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.Publish = new Date(quote.Publish)
+    this.quotes.push(quote)
+  }
 
   constructor() { }
 

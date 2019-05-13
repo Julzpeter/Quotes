@@ -18,6 +18,9 @@
     <div class="col-md-1"></div>
   </div>
 </div>
+<div *ngFor='let quote of quotes;let i= index'>
+  <p id="{{i}}"><span>{{quote.description}}</span> <br> <em id="author"><strong>--{{quote.name}}</strong></em> <br><br><br>PublishedBy: {{quote.Publisher}} <br> Published {{quote.publish|date}}</p>
+</div>
 <hr>
 
 <div class="container">
