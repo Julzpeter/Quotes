@@ -1,0 +1,14 @@
+.jumbotron{
+    background-color: #091f36;
+    color: white;
+    cursor: pointer;
+    
+}
+.btn-success{
+    border-radius: 16px;
+    cursor: pointer;
+}
+:hover{
+    color: #e31c66;
+    cursor: pointer;
+}
