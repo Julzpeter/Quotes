@@ -1,8 +1,7 @@
 .jumbotron{
     background-color: #091f36;
     color: white;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 .btn-success{
     border-radius: 16px;
