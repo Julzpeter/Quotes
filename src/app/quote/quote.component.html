@@ -1,38 +1,57 @@
-<div class="header">
-  <h2>
-    "The truth can only be found in one place: the code. <br> <em>--Robert C. Martin"</em>
-  </h2>
-</div>
-<div class="jumbotron">
-  <h1> Quotes</h1>
-</div>
-<div class="visible class=body">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
-    </div>
-
-    <div class="col-md-1"></div>
+<div class="outline">
+  <div class="jumbotron">
+    <h1> Quotes</h1>
   </div>
-</div>
-<div *ngFor='let quote of quotes;let i= index'>
-  <p id="{{i}}"><span>{{quote.description}}</span> <br> <em id="author"><strong>--{{quote.name}}</strong></em> <br><br><br>PublishedBy: {{quote.Publisher}} <br> Published {{quote.publish|date}}</p>
-</div>
-<hr>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-3"></div>
-    <ul>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3"></div>
+  <div class="visible" class="body">
+    <div class="container between">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
       </div>
-      <div class="col-md-3"></div>
-    </ul>
+
+      <div class="col-md-1"></div>
+    </div>
   </div>
-</div>
+
+  <div class="body2">
+    <div class="container2">
+      <div *ngFor='let quote of quotes;let i= index'>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div id="quotes" class="output col-md-6">
+            <p id="{{i}}"><span>{{quote.description}}</span> <br> <em id="author"><strong>{{quote.name}}</strong></em>
+              <br><br><br>PublishedBy: {{quote.Publisher}} <br> Published {{quote.publish|date}} days ago</p>
+         
+         
+
+              <app-quote-details></app-quote-details>
+         
+         
+            </div>
+        </div>
+          <hr>
+        </div>
+      </div>
+        <div class="container">
+         
+          <div class="row">
+            <div class="col-md-3"></div>
+            <ul>
+              <div class="container">
+
+                <div class="row">
+                <div class="col-md-3"></div>
+              </div>
+          </div>
+          <div class="col-md-3"></div>
+        </ul>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+
+
+
