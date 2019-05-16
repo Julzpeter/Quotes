@@ -23,35 +23,34 @@
           <div id="quotes" class="output col-md-6">
             <p id="{{i}}"><span>{{quote.description}}</span> <br> <em id="author"><strong>{{quote.name}}</strong></em>
               <br><br><br>PublishedBy: {{quote.Publisher}} <br> Published {{quote.publish|date}} </p>
-         <app-upvotes></app-upvotes>
-         
+            <app-upvotes id="quote"></app-upvotes>
 
-              <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-         
-         
-            </div>
+            <br>
+            <br>
+
+            <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+
+
+          </div>
         </div>
-          <hr>
-        </div>
+        <hr>
       </div>
-        <div class="container">
-         
-          <div class="row">
-            <div class="col-md-3"></div>
-            <ul>
-              <div class="container">
+    </div>
+    <div class="container">
 
-                <div class="row">
-                <div class="col-md-3"></div>
-              </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <ul>
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-3"></div>
+            </div>
           </div>
           <div class="col-md-3"></div>
         </ul>
-        </div>
-     
       </div>
+
     </div>
   </div>
-
-
-
+</div>
