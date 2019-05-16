@@ -1,32 +1,53 @@
 <div class="container-fluid">
-  <form (ngSubmit) = 'submitQuote()' #quoteForm='ngForm'>
-    <div class="form-group">
-      <label for="author">Author</label>
-      <input class="form-conrol" required class="form-control" id="text" [(ngModel)]="newQuote.name"  name="name" #name="ngModel" >    
+  <div class="jumbotron">
+
+    <div class="start">
+      <div class="output">
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input class="form-conrol" required class="form-control" id="text" [(ngModel)]="newQuote.name" name="name"
+              #name="ngModel">
+            <div [hidden]="name.valid||name.pristine" class="alert alert-danger">
+              <p>Name is required</p>
+            </div>
+
+          </div>
+
+          <br>
+          <br>
+
+          <div class="form-group">
+            <label for="quote">Quote</label>
+            <textarea class="form-control " id="description" rows="4" [(ngModel)]="newQuote.description"
+              name="description" #dsecription="ngModel" required></textarea>
+            <div [hidden]="description.valid||description.pristine" class="alert alert-danger">
+              <p>description is required</p>
+            </div>
+
+          </div>
+          <br>
+          <br>
+
+          <div class="form-group">
+            <label for="Publisher">Published By</label>
+            <input class='form-control' id="text" [(ngModel)]="newQuote.Publisher" name="Publisher" #Publisher="ngModel"
+              required>
+            <div [hidden]="name.valid||name.pristine" class="alert alert-danger">
+              <p>Publisher is required</p>
+            </div>
+
+          </div>
+          <br>
+          <br>
+
+          <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
+
+          <br>
+          <br>
+
+        </form>
+      </div>
     </div>
-  
-    <br>
-    <br>
-
-  <div class="form-group">
-    <label for="quote">Quote</label>
-    <textarea class="form-control " id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #dsecription="ngModel" required></textarea>
   </div>
-  <br>
-  <br>
-
-  <div class="form-group">
-    <label for="Publisher">Published By</label>
-    <input class='form-control' id="text" [(ngModel)]="newQuote.Publisher" name="Publisher" #Publisher="ngModel" required>
-  </div>
-  <br>
-  <br>
-
-  <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
- 
-  <br>
-  <br>
-
-</form>
-  
 </div>
