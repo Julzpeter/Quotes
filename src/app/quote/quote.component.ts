@@ -8,6 +8,16 @@ import { Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   quotes = []
 
+  deleteQuote(isComplete,index){
+    if (isComplete){
+      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+
+      if(toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
