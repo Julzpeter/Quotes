@@ -5,10 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Its basic functionality is to allow a user to add a quote,upvote,downvote and delete a quote.
 
 ## Development server
-Step 1: Download Angular and AngularCLI
-Step2: Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`. 
- Step 3:Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
- Step 4: Visit my Github repository; Username: Julzpeter,and clone the following link: 
+1) Step 1: Download Angular and AngularCLI
+2) Step2: Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`. 
+ 3) Step 3:Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ 4) Step 4: Visit my Github repository; Username: Julzpeter,and clone the following link: 
 
 
 ## Build
@@ -19,12 +19,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
  |   Behavior         |   Input             |  Output                |
  |--------------------|---------------------|------------------------|
- | Add a quote        |  type a quote       |  outputs user's quote  |
- |--------------------|---------------------|------------------------|
+ |Add a quote         |  type a quote       |  outputs user's quote  |
+ |--------------------|---------------------|------------------------|               
  | Upvote             |  click to upvote    |  upvotes the quote     |
  |--------------------|---------------------|------------------------|
- | Downvote           |  click to downvote  |  downvotes the quote   |
- ---------------------|---------------------|------------------------|
+ | Downvote           | click to downvote   |   downvotes the quote  |  
+ |--------------------|---------------------|------------------------|
  | Delete  a quote    |  click to delete    | deletes the quote      |
     
 
