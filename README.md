@@ -19,12 +19,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
  |   Behavior         |   Input             |  Output                |
  |--------------------|---------------------|------------------------|
- | Add a quote        |  type a quote       |  outputs user's quote  |
- |--------------------|---------------------|------------------------|
+ |Add a quote         |  type a quote       |  outputs user's quote  |
+ |--------------------|---------------------|------------------------|               
  | Upvote             |  click to upvote    |  upvotes the quote     |
  |--------------------|---------------------|------------------------|
- | Downvote           |  click to downvote  |  downvotes the quote   |
- ---------------------|---------------------|------------------------|
+ | Downvote           | click to downvote   |   downvotes the quote  |  
+ |--------------------|---------------------|------------------------|
  | Delete  a quote    |  click to delete    | deletes the quote      |
     
 
